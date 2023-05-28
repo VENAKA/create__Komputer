@@ -152,7 +152,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    animation: footer 3s linear;
+    animation: footer 3.5s linear;
 }
 @keyframes footer{
     0%{
