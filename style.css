@@ -9,6 +9,8 @@
 body{
     background-image: url(./img/main-screen__bgc.png);
     background-size: cover;
+    height: 740px;
+    overflow: hidden;
 }
 /* start_____header */
 .header {
@@ -23,9 +25,6 @@ body{
     height: 40px;
     border: 1px solid #000;
     margin: 0 0 0 80px;
-}
-.header__nav {
-
 }
 .nav__ul {
     display: flex;
@@ -54,6 +53,11 @@ body{
     border-radius: 50px;
     color: #fff;
     margin: 0 80px 0 0;
+    cursor: pointer;
+    transition: 1s;
+}
+.button:hover{
+    background: linear-gradient(94.26deg, #8a6cac 9.51%, #493e91 90.23%);
 }
 /* end______header */
 .conteiner {
@@ -71,6 +75,12 @@ body{
     font-size: 64px;
     line-height: 140%;
     color: #FFFFFF;
+    animation: calendar_text 2s linear ;
+}
+@keyframes calendar_text{
+    0%{
+        transform: translateX(-1000px);
+    }
 }
 .calendar__conteiner {
     width: 107px;
@@ -81,6 +91,36 @@ body{
     align-items: center;
     padding: 20px;
     background-color: #121212;
+    animation: conteiner_1 3s linear;
+}
+@keyframes conteiner_1{
+    0%{
+        transform: translateY(3500px);
+    }
+}
+.calendar__conteiner:nth-child(2){
+    animation: conteiner_2 2.4s linear;
+}
+@keyframes conteiner_2{
+    0%{
+        transform: translateY(2000px);
+    }
+}
+.calendar__conteiner:nth-child(3){
+    animation: conteiner_3 2.6s linear;
+}
+@keyframes conteiner_3{
+    0%{
+        transform: translateY(2500px);
+    }
+}
+.calendar__conteiner:nth-child(4){
+    animation: conteiner_4 2.8s linear;
+}
+@keyframes conteiner_4{
+    0%{
+        transform: translateY(3000px);
+    }
 }
 .text {
     font-family: 'Roboto';
@@ -109,13 +149,28 @@ body{
 .footer {
     height: 130px;
     background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: footer 3s linear;
+}
+@keyframes footer{
+    0%{
+        transform: translateY(1000px);
+    }
+}
+.footer__conteiner {
+    width: 1400px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .footer__button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
     gap: 10px;
     width: 169px;
     height: 44px;
@@ -128,13 +183,117 @@ body{
     line-height: 150%;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.footer__button:hover{
+    background: linear-gradient(94.78deg, #aa463e 11.19%, #390e39 93.72%);
 }
 .peple {
     height: 58px;
     width: 200px;
-    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .nests {
     width: 715px;
     height: 58px;
+}
+.peple__1 {
+    display: flex;
+    justify-content: space-between;
+}
+.peaple__2 {
+    display: flex;
+    justify-content: space-between;
+}
+.nests__pay {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+.nests__shcala {
+    width: 714px;
+    height: 6px;
+    background: #FFFFFF;
+}
+.nests__money {
+    display: flex;
+    justify-content: space-between;
+}
+.peple__1-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.peple__1-text-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.peple__2-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.peple__2-text-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.pay__money {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.money {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.shcala__mini {
+    width: 440px;
+    height: 6px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.money__0 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.money__1000000 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
 }
